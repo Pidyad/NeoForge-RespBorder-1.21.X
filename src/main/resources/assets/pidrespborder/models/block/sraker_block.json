@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "particle": "pidrespborder:block/sraker_block_side",
+    "down": "pidrespborder:block/sraker_block_side",
+    "up": "pidrespborder:block/sraker_block_top",
+    "north": "pidrespborder:block/sraker_block_front",
+    "south": "pidrespborder:block/sraker_block_side",
+    "east": "pidrespborder:block/sraker_block_side",
+    "west": "pidrespborder:block/sraker_block_side"
+  }
+}

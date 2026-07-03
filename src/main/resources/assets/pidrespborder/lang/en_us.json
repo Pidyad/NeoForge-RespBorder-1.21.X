@@ -1,3 +1,7 @@
 {
-  "item.pidrespborder.sraker": "Sraker"
+  "item.pidrespborder.sraker": "Sraker",
+
+  "block.pidrespborder.sraker_block": "Solid Sraker",
+
+  "creativetab.pidrespborder.respborder_items": "Border of the Responsibility"
 }
