@@ -1,0 +1,46 @@
+{
+  "type": "minecraft:blocks",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "name": "pidrespborder:sraker",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": [
+                      "minecraft:diamond_pickaxe"
+                    ]
+                  }
+                }
+              ],
+              "functions": [
+                {
+                  "function": "minecraft:set_count",
+                  "count": 9.0
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "pidrespborder:sraker_block"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "random_sequence": "pidrespborder:blocks/sraker_block"
+}
