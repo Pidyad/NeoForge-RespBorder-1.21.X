@@ -1,5 +1,7 @@
 package net.pidyad.respborder;
 
+import net.neoforged.neoforge.common.ModConfigSpec;
+
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.pidyad.respborder.block.ModBlocks;
@@ -21,6 +23,8 @@ import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+
+import static net.pidyad.respborder.block.ModBlocks.*;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(RespBorder.MOD_ID)
@@ -44,7 +48,6 @@ public class RespBorder {
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
 
@@ -58,13 +61,7 @@ public class RespBorder {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ModItems.SRAKER);
-        }
 
-        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(ModBlocks.SRAKER_BLOCK);
-        }
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
