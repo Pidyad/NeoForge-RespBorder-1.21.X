@@ -22,6 +22,10 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SRAKER);
                         output.accept(ModBlocks.SRAKER_BLOCK);
                         output.accept(ModItems.CHISEL);
+                        output.accept(ModBlocks.MAGIC_BLOCK);
+                        output.accept(ModItems.KOLBAS);
+                        output.accept(ModItems.SWING);
+                        output.accept(ModItems.SHIT);
                     })
 
                     .build());

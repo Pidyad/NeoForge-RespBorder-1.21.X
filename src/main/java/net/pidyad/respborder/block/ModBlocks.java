@@ -9,6 +9,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.pidyad.respborder.RespBorder;
+import net.pidyad.respborder.block.custom.MagicBlock;
 import net.pidyad.respborder.item.ModItems;
 
 import java.util.function.Supplier;
@@ -21,6 +22,11 @@ public class ModBlocks {
     public static final DeferredBlock<Block> SRAKER_BLOCK = registerBlock("sraker_block", () -> new Block(BlockBehaviour.Properties.of()
             .strength(0.1f)
             .sound(SoundType.ANVIL)) );
+
+    public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block", () -> new MagicBlock(BlockBehaviour.Properties.of()
+            .strength(1f)
+            .sound(SoundType.BASALT)
+            .requiresCorrectToolForDrops()));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

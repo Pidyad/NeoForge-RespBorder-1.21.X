@@ -3,7 +3,15 @@
 
   "item.pidrespborder.chisel": "Chisel",
 
+  "item.pidrespborder.shit": "Shit",
+
+  "item.pidrespborder.swing": "Swing",
+
+  "item.pidrespborder.kolbas": "Kolbas",
+
   "block.pidrespborder.sraker_block": "Solid Sraker",
+
+  "block.pidrespborder.magic_block": "Converter",
 
   "creativetab.pidrespborder.respborder_items": "Border of the Responsibility"
 }

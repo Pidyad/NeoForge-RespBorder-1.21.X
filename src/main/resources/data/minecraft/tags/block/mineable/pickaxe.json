@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "pidrespborder:sraker_block"
+    "pidrespborder:sraker_block",
+    "pidrespborder:magic_block"
   ]
 }

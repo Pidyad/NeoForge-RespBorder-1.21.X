@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "minecraft:cooked_porkchop"
+    },
+    "S": {
+      "item": "minecraft:string"
+    }
+  },
+  "pattern": [
+    "SPS"
+  ],
+  "result": {
+    "count": 2,
+    "id": "pidrespborder:kolbas"
+  }
+}
