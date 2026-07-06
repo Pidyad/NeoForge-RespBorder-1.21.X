@@ -1,19 +1,25 @@
 package net.pidyad.respborder.block.custom;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.pidyad.respborder.item.ModItems;
+import net.pidyad.respborder.util.modTags;
+
+import java.util.List;
 
 public class MagicBlock extends Block  {
     public MagicBlock(Properties properties) {
@@ -31,7 +37,7 @@ public class MagicBlock extends Block  {
     {
         if(entity instanceof ItemEntity itemEntity)
         {
-            if(itemEntity.getItem().getItem() == ModItems.SRAKER.get())
+            if(IsValidItem(itemEntity.getItem()))
             {
                 itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
             }
@@ -43,5 +49,17 @@ public class MagicBlock extends Block  {
         }
 
         super.stepOn(level, pos, state, entity);
+    }
+
+    private boolean IsValidItem(ItemStack item)
+    {
+        return item.is(modTags.Items.TRANSFORMABLE_ITEMS);
+    }
+
+    @Override
+    public void appendHoverText(ItemStack stack, Item.TooltipContext context, List<Component> tooltipComponent, TooltipFlag flag)
+    {
+        tooltipComponent.add(Component.translatable("tooltip.pidrespborder.magic_block.tooltip"));
+        super.appendHoverText(stack, context, tooltipComponent, flag);
     }
 }

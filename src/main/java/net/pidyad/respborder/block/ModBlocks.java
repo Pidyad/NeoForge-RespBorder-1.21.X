@@ -23,6 +23,10 @@ public class ModBlocks {
             .strength(0.1f)
             .sound(SoundType.ANVIL)) );
 
+    public static final DeferredBlock<Block> SRAKER_ORE = registerBlock("sraker_ore", () -> new Block(BlockBehaviour.Properties.of()
+            .strength(0.1f)
+            .sound(SoundType.ANVIL)) );
+
     public static final DeferredBlock<Block> MAGIC_BLOCK = registerBlock("magic_block", () -> new MagicBlock(BlockBehaviour.Properties.of()
             .strength(1f)
             .sound(SoundType.BASALT)

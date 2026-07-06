@@ -1,17 +1,18 @@
 {
   "item.pidrespborder.sraker": "Sraker",
-
   "item.pidrespborder.chisel": "Chisel",
-
   "item.pidrespborder.shit": "Shit",
-
   "item.pidrespborder.swing": "Swing",
-
   "item.pidrespborder.kolbas": "Kolbas",
 
   "block.pidrespborder.sraker_block": "Solid Sraker",
+  "block.pidrespborder.sraker_ore": "Ore of Sraker",
+  "block.pidrespborder.magic_block": "§dConverter",
 
-  "block.pidrespborder.magic_block": "Converter",
+  "creativetab.pidrespborder.respborder_items": "Border of the Responsibility",
 
-  "creativetab.pidrespborder.respborder_items": "Border of the Responsibility"
+  "tooltip.pidrespborder.magic_block.tooltip": "Converts Srakers into diamonds, white carpets into brown ones.§r",
+  "tooltip.pidrespborder.chisel.tooltip": "Press §eSHIFT§r for info.",
+  "tooltip.pidrespborder.chisel.tooltip.shiftDown": "Conjures blocks into other blocks.",
+  "tooltip.pidrespborder.sraker.tooltip": "§d§ka§r§dSponsored by §lPidyad§r§d§ka§r"
 }
