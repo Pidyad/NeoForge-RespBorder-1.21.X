@@ -21,6 +21,7 @@ public class ModCreativeModeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.SRAKER);
                         output.accept(ModBlocks.SRAKER_BLOCK);
+                        output.accept(ModBlocks.SRAKER_ORE);
                         output.accept(ModItems.CHISEL);
                         output.accept(ModBlocks.MAGIC_BLOCK);
                         output.accept(ModItems.KOLBAS);
