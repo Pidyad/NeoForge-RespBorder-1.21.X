@@ -22,10 +22,23 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.SRAKER_ORE.get())
                 .add(ModBlocks.SRAKER_BLOCK.get())
-                .add(ModBlocks.MAGIC_BLOCK.get());
+                .add(ModBlocks.MAGIC_BLOCK.get())
+                .add(ModBlocks.SRAKER_DOOR.get())
+                .add(ModBlocks.SRAKER_TRAPDOOR.get())
+                .add(ModBlocks.SRAKER_BUTTON.get())
+                .add(ModBlocks.SRAKER_FENCE.get())
+                .add(ModBlocks.SRAKER_FENCE_GATE.get())
+                .add(ModBlocks.SRAKER_PRESSURE_PLATE.get())
+                .add(ModBlocks.SRAKER_STAIRS.get())
+                .add(ModBlocks.SRAKER_WALL.get())
+                .add(ModBlocks.SRAKER_SLAB.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.SRAKER_ORE.get());
+
+        tag(BlockTags.FENCES).add(ModBlocks.SRAKER_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(ModBlocks.SRAKER_FENCE_GATE.get());
+        tag(BlockTags.WALLS).add(ModBlocks.SRAKER_WALL.get());
     }
 
 

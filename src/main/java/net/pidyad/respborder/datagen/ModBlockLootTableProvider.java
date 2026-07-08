@@ -29,6 +29,18 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     protected void generate() {
         dropSelf(ModBlocks.SRAKER_BLOCK.get());
         dropSelf(ModBlocks.MAGIC_BLOCK.get());
+        dropSelf(ModBlocks.SRAKER_STAIRS.get());
+        dropSelf(ModBlocks.SRAKER_FENCE.get());
+        dropSelf(ModBlocks.SRAKER_WALL.get());
+        dropSelf(ModBlocks.SRAKER_FENCE.get());
+        dropSelf(ModBlocks.SRAKER_BUTTON.get());
+        dropSelf(ModBlocks.SRAKER_FENCE_GATE.get());
+        dropSelf(ModBlocks.SRAKER_PRESSURE_PLATE.get());
+        dropSelf(ModBlocks.SRAKER_TRAPDOOR.get());
+        add(ModBlocks.SRAKER_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.SRAKER_SLAB.get()));
+        add(ModBlocks.SRAKER_DOOR.get(),
+                block -> createDoorTable(ModBlocks.SRAKER_DOOR.get()));
 
         add(ModBlocks.SRAKER_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.SRAKER_ORE.get(), ModItems.SRAKER.get(), 3, 9));

@@ -2,9 +2,10 @@ package net.pidyad.respborder.block;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -31,6 +32,34 @@ public class ModBlocks {
             .strength(1f)
             .sound(SoundType.BASALT)
             .requiresCorrectToolForDrops()));
+
+    public static DeferredBlock<StairBlock> SRAKER_STAIRS = registerBlock("sraker_stairs",
+            () -> new StairBlock(ModBlocks.SRAKER_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+
+    public static DeferredBlock<SlabBlock> SRAKER_SLAB = registerBlock("sraker_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+
+    public static DeferredBlock<PressurePlateBlock> SRAKER_PRESSURE_PLATE = registerBlock("sraker_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+
+    public static DeferredBlock<FenceBlock> SRAKER_FENCE = registerBlock("sraker_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+
+    public static DeferredBlock<FenceGateBlock> SRAKER_FENCE_GATE = registerBlock("sraker_fence_gate",
+            () -> new FenceGateBlock(WoodType.WARPED, BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+
+    public static DeferredBlock<WallBlock> SRAKER_WALL = registerBlock("sraker_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+
+    public static DeferredBlock<ButtonBlock> SRAKER_BUTTON = registerBlock("sraker_button",
+            () -> new ButtonBlock(BlockSetType.OAK, 20, BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noCollission()));
+
+    public static DeferredBlock<DoorBlock> SRAKER_DOOR = registerBlock("sraker_door",
+            () -> new DoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()));
+
+    public static DeferredBlock<TrapDoorBlock> SRAKER_TRAPDOOR = registerBlock("sraker_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.OAK, BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops().noOcclusion()));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);

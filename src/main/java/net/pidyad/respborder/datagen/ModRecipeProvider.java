@@ -5,6 +5,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
@@ -48,6 +49,31 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         oreSmelting(recipeOutput, SRAKER_SMELTABLES, RecipeCategory.MISC, ModItems.SRAKER.get(), 0.25f, 200, "sraker");
         oreBlasting(recipeOutput, SRAKER_SMELTABLES, RecipeCategory.MISC, ModItems.SRAKER.get(), 0.25f, 100, "sraker");
+
+        stairBuilder(ModBlocks.SRAKER_STAIRS.get(), Ingredient.of(ModItems.SRAKER))
+                .unlockedBy("has_sraker", has(ModItems.SRAKER)).save(recipeOutput);
+
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SRAKER_SLAB.get(), ModItems.SRAKER.get());
+
+        buttonBuilder(ModBlocks.SRAKER_BUTTON.get(), Ingredient.of(ModItems.SRAKER))
+                .unlockedBy("has_sraker", has(ModItems.SRAKER)).save(recipeOutput);
+
+        pressurePlate(recipeOutput, ModBlocks.SRAKER_PRESSURE_PLATE.get(), ModItems.SRAKER.get());
+
+        fenceBuilder(ModBlocks.SRAKER_FENCE.get(), Ingredient.of(ModItems.SRAKER))
+                .unlockedBy("has_sraker", has(ModItems.SRAKER)).save(recipeOutput);
+
+        fenceGateBuilder(ModBlocks.SRAKER_FENCE_GATE.get(), Ingredient.of(ModItems.SRAKER))
+                .unlockedBy("has_sraker", has(ModItems.SRAKER)).save(recipeOutput);
+
+        wall(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SRAKER_WALL.get(), ModItems.SRAKER.get());
+
+        doorBuilder(ModBlocks.SRAKER_DOOR.get(), Ingredient.of(ModItems.SRAKER))
+                .unlockedBy("has_sraker", has(ModItems.SRAKER)).save(recipeOutput);
+
+        trapdoorBuilder(ModBlocks.SRAKER_TRAPDOOR.get(), Ingredient.of(ModItems.SRAKER))
+                .unlockedBy("has_sraker", has(ModItems.SRAKER)).save(recipeOutput);
+
     }
 }
 

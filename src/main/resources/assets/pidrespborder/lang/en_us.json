@@ -9,6 +9,16 @@
   "block.pidrespborder.sraker_ore": "Ore of Sraker",
   "block.pidrespborder.magic_block": "§dConverter",
 
+  "block.pidrespborder.sraker_stairs": "Sraker Stairs",
+  "block.pidrespborder.sraker_fence": "Sraker Fence",
+  "block.pidrespborder.sraker_slab": "Sraker Slab",
+  "block.pidrespborder.sraker_wall": "Sraker Wall",
+  "block.pidrespborder.sraker_pressure_plates": "Sraker Pressure Plates",
+  "block.pidrespborder.sraker_fence_gate": "Sraker Gate",
+  "block.pidrespborder.sraker_door": "Sraker Door",
+  "block.pidrespborder.sraker_trapdoor": "Sraker Trapdoor",
+  "block.pidrespborder.sraker_button": "Sraker Button",
+
   "creativetab.pidrespborder.respborder_items": "Border of the Responsibility",
 
   "tooltip.pidrespborder.magic_block.tooltip": "Converts Srakers into diamonds, white carpets into brown ones.§r",

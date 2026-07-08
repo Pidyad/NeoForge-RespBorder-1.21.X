@@ -27,6 +27,16 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.KOLBAS);
                         output.accept(ModItems.SWING);
                         output.accept(ModItems.SHIT);
+
+                        output.accept(ModBlocks.SRAKER_DOOR);
+                        output.accept(ModBlocks.SRAKER_TRAPDOOR);
+                        output.accept(ModBlocks.SRAKER_BUTTON);
+                        output.accept(ModBlocks.SRAKER_FENCE);
+                        output.accept(ModBlocks.SRAKER_FENCE_GATE);
+                        output.accept(ModBlocks.SRAKER_WALL);
+                        output.accept(ModBlocks.SRAKER_PRESSURE_PLATE);
+                        output.accept(ModBlocks.SRAKER_SLAB);
+                        output.accept(ModBlocks.SRAKER_STAIRS);
                     })
 
                     .build());
