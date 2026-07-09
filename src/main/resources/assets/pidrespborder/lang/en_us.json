@@ -19,6 +19,8 @@
   "block.pidrespborder.sraker_trapdoor": "Sraker Trapdoor",
   "block.pidrespborder.sraker_button": "Sraker Button",
 
+  "block.pidrespborder.sraker_lamp": "Sraker Lamp",
+
   "creativetab.pidrespborder.respborder_items": "Border of the Responsibility",
 
   "tooltip.pidrespborder.magic_block.tooltip": "Converts Srakers into diamonds, white carpets into brown ones.§r",

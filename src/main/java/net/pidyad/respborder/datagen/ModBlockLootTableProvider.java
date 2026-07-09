@@ -37,6 +37,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.SRAKER_FENCE_GATE.get());
         dropSelf(ModBlocks.SRAKER_PRESSURE_PLATE.get());
         dropSelf(ModBlocks.SRAKER_TRAPDOOR.get());
+        dropSelf(ModBlocks.SRAKER_LAMP.get());
         add(ModBlocks.SRAKER_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.SRAKER_SLAB.get()));
         add(ModBlocks.SRAKER_DOOR.get(),

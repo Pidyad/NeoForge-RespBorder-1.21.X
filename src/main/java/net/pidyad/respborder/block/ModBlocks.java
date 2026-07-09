@@ -11,6 +11,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.pidyad.respborder.RespBorder;
 import net.pidyad.respborder.block.custom.MagicBlock;
+import net.pidyad.respborder.block.custom.SrakerLampBlock;
 import net.pidyad.respborder.item.ModItems;
 
 import java.util.function.Supplier;
@@ -36,6 +37,9 @@ public class ModBlocks {
     public static DeferredBlock<StairBlock> SRAKER_STAIRS = registerBlock("sraker_stairs",
             () -> new StairBlock(ModBlocks.SRAKER_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+
+    public static DeferredBlock<Block> SRAKER_LAMP = registerBlock("sraker_lamp",
+            () -> new SrakerLampBlock(BlockBehaviour.Properties.of().strength(2f).lightLevel(state -> state.getValue(SrakerLampBlock.CLICKED) ? 15 : 0)));
 
     public static DeferredBlock<SlabBlock> SRAKER_SLAB = registerBlock("sraker_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));

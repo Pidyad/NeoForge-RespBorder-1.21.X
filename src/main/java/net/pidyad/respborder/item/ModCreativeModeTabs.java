@@ -37,6 +37,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.SRAKER_PRESSURE_PLATE);
                         output.accept(ModBlocks.SRAKER_SLAB);
                         output.accept(ModBlocks.SRAKER_STAIRS);
+                        output.accept(ModBlocks.SRAKER_LAMP);
                     })
 
                     .build());
